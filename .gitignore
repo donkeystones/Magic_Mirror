@@ -22,5 +22,8 @@ public
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 
 apikeys.js
+=======
+>>>>>>> parent of 4a2eadb (Placeholder api key file)
