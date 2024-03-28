@@ -30,7 +30,6 @@ const Weather = () => {
             const data = await getMeterologicalForecast();
             const parsedData = parseWeatherData(data);
             setWeatherData(parsedData);
-            console.log("lol");
         }
         const interval = setInterval(() => {
             fetchWeatherData().catch(console.error)
