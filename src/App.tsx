@@ -1,5 +1,6 @@
 import './App.css'
 import Clock from './components/clock'
+import Weather from './components/weather'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <div className="container">
         <Clock />
+        <Weather />
       </div> 
     </>
   )
