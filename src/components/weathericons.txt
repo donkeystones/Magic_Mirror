@@ -1,27 +1,27 @@
-1	Clear sky               
-2	Nearly clear sky        
-3	Variable cloudiness     
-4	Halfclear sky           
-5	Cloudy sky              
-6	Overcast                
-7	Fog                     
-8	Light rain showers      
-9	Moderate rain showers   
-10	Heavy rain showers      
-11	Thunderstorm            
-12	Light sleet showers     
-13	Moderate sleet showers  
-14	Heavy sleet showers     
-15	Light snow showers      
-16	Moderate snow showers   
-17	Heavy snow showers      
-18	Light rain              
-19	Moderate rain           
-20	Heavy rain              
-21	Thunder                 
-22	Light sleet             
-23	Moderate sleet          
-24	Heavy sleet             
-25	Light snowfall          
-26	Moderate snowfall       
-27	Heavy snowfall          
+1	Clear sky               WiDaySunny
+2	Nearly clear sky        WiDayCloudyHigh
+3	Variable cloudiness     WiDayCloudyHigh
+4	Halfclear sky           WiDayCloudyHigh
+5	Cloudy sky              WiCloud
+6	Overcast                WiCloud
+7	Fog                     WiFog
+8	Light rain showers      WiDayRainMix
+9	Moderate rain showers   WiDayRainMix
+10	Heavy rain showers      WiRainMix
+11	Thunderstorm            WiThunderstorm
+12	Light sleet showers     WiDaySleet
+13	Moderate sleet showers  WiDaySleet
+14	Heavy sleet showers     WiSLeet
+15	Light snow showers      WiDaySnowsnow
+16	Moderate snow showers   WiDaySnow
+17	Heavy snow showers      WiSnow
+18	Light rain              WiDayRain
+19	Moderate rain           WiDayRain
+20	Heavy rain              WiRain
+21	Thunder                 WiThunderstorm
+22	Light sleet             WiDaySleet
+23	Moderate sleet          WiDaySleet
+24	Heavy sleet             WiSleet
+25	Light snowfall          WiDaySnow
+26	Moderate snowfall       WiDaySnow
+27	Heavy snowfall          WiSnow

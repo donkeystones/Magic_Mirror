@@ -1,3 +1,8 @@
 .weather {
     color:white;
 }
+
+.weatherIconAndTime {
+    display:flex;
+    flex-direction: row;
+}

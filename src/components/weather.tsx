@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { getMeterologicalForecast } from "../assets/api_calls"
 import "./weather.css";
+import { WiCloud, WiDayCloudyHigh, WiDayRain, WiDayRainMix, WiDaySleet, WiDaySnow, WiDaySunny, WiFog, WiRain, WiRainMix, WiSleet, WiSnow, WiThunderstorm } from "./weather-icons";
 
 
 interface WeahterData {
@@ -29,6 +30,7 @@ const Weather = () => {
         const fetchWeatherData = async () => {
             const data = await getMeterologicalForecast();
             const parsedData = parseWeatherData(data);
+            console.log(data);
             setWeatherData(parsedData);
         }
         const interval = setInterval(() => {
@@ -41,9 +43,70 @@ const Weather = () => {
 
     return <div className="weather">
                 <ul>
-                    {weatherData.length === 0 ? "" : weatherData.map(data => <li key={data.time}>{data.temp}</li>)}
+                    {weatherData.length === 0 ? "" : weatherData.map(data => <li className="weatherIconAndTime" key={data.time}>{GetWeatherIcons(parseInt(data.symbol))}<h1>{new Date(data.time).getHours()}:00</h1></li>)}
                 </ul>
             </div>
+}
+
+const GetWeatherIcons = (symbolId: number) => {
+    switch(symbolId){
+        case 1:
+            return <WiDaySunny width="5em" height="5em"/>;
+        case 2:
+            return <WiDayCloudyHigh width="5em" height="5em"/>
+        case 3:
+            return <WiDayCloudyHigh width="5em" height="5em"/>
+        case 4:
+            return <WiDayCloudyHigh width="5em" height="5em"/>
+        case 5: 
+            return <WiCloud width="5em" height="5em"/>
+        case 6: 
+            return <WiCloud width="5em" height="5em"/>
+        case 7: 
+            return <WiFog width="5em" height="5em"/>
+        case 8:
+            return <WiDayRainMix width="5em" height="5em"/>
+        case 9:
+            return <WiDayRainMix width="5em" height="5em"/>
+        case 10:
+            return <WiRainMix width="5em" height="5em" />
+        case 11:
+            return <WiThunderstorm width="5em" height="5em" />
+        case 12:
+            return <WiDaySleet width="5em" height="5em" />
+        case 13:
+            return <WiDaySleet width="5em" height="5em" />
+        case 14:
+            return <WiSleet width="5em" height="5em" />
+        case 15:
+            return <WiDaySnow width="5em" height="5em" />
+        case 16:
+            return <WiDaySnow width="5em" height="5em" />
+        case 17: 
+            return <WiSnow width="5em" height="5em" />  
+        case 18:
+            return <WiDayRain width="5em" height="5em" />  
+        case 19:
+            return <WiDayRain width="5em" height="5em" />  
+        case 20:
+            return <WiRain width="5em" height="5em" />  
+        case 21:
+            return <WiThunderstorm width="5em" height="5em" />
+        case 22:
+            return <WiDaySleet width="5em" height="5em" />
+        case 23:
+            return <WiDaySleet width="5em" height="5em" />
+        case 24:
+            return <WiSleet width="5em" height="5em" />
+        case 25:
+            return <WiDaySnow width="5em" height="5em" />
+        case 26:
+            return <WiDaySnow width="5em" height="5em" />
+        case 27: 
+            return <WiSnow width="5em" height="5em" /> 
+        default:
+            return <WiDaySunny width="5em" height="5em"/>;
+    }
 }
 
 export default Weather;
