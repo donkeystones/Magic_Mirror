@@ -8,7 +8,10 @@ function App() {
     <>
       <div className="container">
         <Clock />
-        <Weather />
+        <div className="mid">
+          <Weather />
+        </div>
+        <div className="bot"></div>
       </div> 
     </>
   )
