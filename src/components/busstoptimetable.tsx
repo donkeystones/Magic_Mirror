@@ -14,7 +14,7 @@ const BusstopTimeTable = (props: BusstopTimeTableProps) => {
     return <div>
         <h1>{props.stop_name}</h1>
         {props.busses_departing.map(departing_bus => {
-            return <p>{departing_bus.direction} - {departing_bus.name}, {departing_bus.departure_time}</p>
+            return <p key={departing_bus.name+departing_bus.departure_time}>{departing_bus.direction} - {departing_bus.name}, {departing_bus.departure_time}</p>
         })}
     </div>
 }

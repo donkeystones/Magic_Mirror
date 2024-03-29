@@ -30,7 +30,6 @@ const Weather = () => {
         const fetchWeatherData = async () => {
             const data = await getMeterologicalForecast();
             const parsedData = parseWeatherData(data);
-            console.log(data);
             setWeatherData(parsedData);
         }
         const interval = setInterval(() => {
