@@ -5,5 +5,4 @@ Used to make the interface for the magic mirror (see inspiration for project her
 Includes:
 A clock,
 Current weather,
-Buss timetable,
-.....
+Buss timetable
