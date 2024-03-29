@@ -19,7 +19,7 @@ const Busstops = () => {
 
         const interval = setInterval(() => {
             loadBusStops().catch(console.error)
-        }, 900000);
+        }, 180000);
         loadBusStops().catch(console.error);
 
         return () => clearInterval(interval);
