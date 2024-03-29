@@ -1,0 +1,3 @@
+change this file to a .ts and add your TRAFIKLAB Resrobot api key
+
+export const RESROBOT_API_KEY = "add your key here";
