@@ -12,7 +12,7 @@
 12	Light sleet showers     WiDaySleet
 13	Moderate sleet showers  WiDaySleet
 14	Heavy sleet showers     WiSLeet
-15	Light snow showers      WiDaySnowsnow
+15	Light snow showers      WiDaySnow
 16	Moderate snow showers   WiDaySnow
 17	Heavy snow showers      WiSnow
 18	Light rain              WiDayRain

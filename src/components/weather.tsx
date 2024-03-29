@@ -43,7 +43,7 @@ const Weather = () => {
 
     return <div className="weather">
                 <ul>
-                    {weatherData.length === 0 ? "" : weatherData.map(data => <li className="weatherIconAndTime" key={data.time}>{GetWeatherIcons(parseInt(data.symbol))}<h1>{new Date(data.time).getHours()}:00</h1></li>)}
+                    {weatherData.length === 0 ? "" : weatherData.map(data => <li className="weatherIconAndTime" key={data.time}>{GetWeatherIcons(parseInt(data.symbol))}<h1>{new Date(data.time).getHours()}:00, {data.temp}°C</h1></li>)}
                 </ul>
             </div>
 }
