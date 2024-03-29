@@ -1,4 +1,5 @@
 import './App.css'
+import Busstops from './components/busstops'
 import Clock from './components/clock'
 import Weather from './components/weather'
 
@@ -10,6 +11,7 @@ function App() {
         <Clock />
         <div className="mid">
           <Weather />
+          <Busstops />
         </div>
         <div className="bot"></div>
       </div> 
