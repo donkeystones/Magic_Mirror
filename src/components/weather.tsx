@@ -14,8 +14,8 @@ const parseWeatherData = (rawData: any): Array<WeahterData> => {
     let weatherdata: Array<WeahterData> = [];
     for(let i = 0; i < 5; i++){
         let time = rawData.timeSeries[i].validTime; //Get time
-        let symbol = rawData.timeSeries[i].parameters[18].values[0]; //Get symbol id
-        let temp = rawData.timeSeries[i].parameters[11].values[0]; //Get temperature in Celsius
+        let symbol = rawData.timeSeries[i].parameters.find((parameter: any) => parameter.name === "Wsymb2").values[0];//Get symbol id
+        let temp = rawData.timeSeries[i].parameters.find((parameter: any) => parameter.name === "t").values[0]; //Get temperature in Celsius
         weatherdata.push({time: time, symbol: symbol, temp: temp}); //Add to array
     }
     return weatherdata;
